@@ -1,0 +1,39 @@
+class Kucing {
+// atribut
+    public String warna = "merah";
+    public int jumlah_kaki = 4 ;
+    public String jenis_ekor = "panjang dan lurus";
+    public String makanan_kesukaan = "ikan dan ayam goreng";
+    
+    
+    public String bersuara(){   // method fungsi
+        return "meong";
+    }    
+    
+    public void berburu (){    // method prosedur
+        System.out.println("berburu ikan");
+    }
+
+
+public static void main(String[] args) {
+	
+	// Object
+        Kucing ku = new Kucing();
+        System.out.println("Warna : " + ku.warna);
+        System.out.println("Jumlah Kaki : " + ku.jumlah_kaki);
+        System.out.println("Jenis Ekor : " + ku.jenis_ekor);
+        System.out.println("Makanan Kesukaan : " + ku.makanan_kesukaan);
+        
+        ku.berburu(); // method Prosedur
+        
+        System.out.println("Bersuara : " + ku.bersuara());
+        
+        ku.warna = "Hijau";
+        ku.jumlah_kaki = 5;
+        
+        System.out.println("Warna : " + ku.warna);
+        System.out.println("Jumlah Kaki : " + ku.jumlah_kaki);
+
+	}
+
+}
