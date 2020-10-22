@@ -1,0 +1,21 @@
+{
+        //membuat sebuah array yang berisi variabel-variabel 
+//boolean pada sebuah identifier. Array ini terdiri dari 4 
+//elemen yang diinisilisasikan sebagai value 
+//{true,false,true,false}
+
+boolean results[] ={ true, false, true, false };
+
+//Membuat sebuah array yang terdiri dari penginisialisasian 
+//4 variabel double bagi value {100,90,80,75}
+
+double grades [] = {100, 90, 80, 75};
+
+//Membuat sebuah array String dengan identifier days. Array
+//ini terdiri dari 7 elemen.
+
+String days [] = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+//memberikan nilai 10 kepada elemen pertama array
+       int ages[] = {10};
+        //mencetak elemen array yang terakhir
+        System.out.println(ages[0]);
