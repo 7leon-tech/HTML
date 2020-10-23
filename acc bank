@@ -1,0 +1,68 @@
+Scanner input = new Scanner(System.in);
+    String namabangun =null, rumus=null, pilih;
+
+        Double hasil=null, panjang, lebar, tinggi, sisi;
+        do {
+        System.out.println("APLIKASI MENCARI LUAS DAN VOLUME");
+        System.out.println("1.rumus persegi panjang\n"
+                + "2.rumus persegi\n"
+                + "3.rumus kubus\n"
+                + "4.rumus baliok\n"
+                + "5.apakah anda ingin menghitung lagi");
+        System.out.println("=========================================");
+        System.out.println("pilih bangunan yang anda ingin hitung");
+         pilih = input.nextLine();
+        
+             switch (pilih) {
+                            case "1":
+                                namabangun = "persegi panjang";
+                                System.out.println("ini dia "+namabangun);
+                                System.out.println("masukkan sisinya");
+                                sisi = input.nextDouble();
+                                System.out.println("masukan lebarnya");
+                                lebar = input.nextDouble();
+                                hasil = (sisi*lebar);
+                                System.out.println(hasil);
+                                break;
+                     
+                            case "2":
+                                namabangun = "persegi";
+                                System.out.println("ini dia "+namabangun);
+                                System.out.println("masukkan panjangnya");
+                                panjang = input.nextDouble();
+                                System.out.println("masukan lebarnya");
+                                lebar = input.nextDouble();
+                                hasil = (lebar*panjang);
+                                System.out.println(hasil);
+                                break;
+                     
+                            case "3":
+                                namabangun = "kubus";
+                                System.out.println("ini dia "+namabangun);
+                                System.out.println("masukkan sisinya");
+                                sisi = input.nextDouble();
+                                hasil = (sisi*3);
+                                System.out.println(hasil);
+                                break;
+                     
+                            case "4":
+                                namabangun = "balok";
+                                System.out.println("ini dia "+namabangun);
+                                System.out.println("masukkan panjangnya");
+                                panjang = input.nextDouble();
+                                System.out.println("masukan lebarnya");
+                                lebar = input.nextDouble();
+                                System.out.println("masukan tingginya");
+                                tinggi = input.nextDouble();
+                                hasil = (panjang*lebar*tinggi);
+                                System.out.println(hasil);
+                                break;
+                            case "5":    
+          
+             }  
+             System.out.println("apakah anda ingin kembali menghitung(y/t)");
+             pilih =input.next();
+             
+    } while (pilih.equals("y"));   
+            
+    
