@@ -1,0 +1,67 @@
+ String namabangun =null, rumus=null, pil;
+        Double hasil=null, panjang, lebar, tinggi, sisi;
+            Scanner input = new Scanner(System.in);
+            System.out.println("APLIKASI MENCARI LUAS DAN VOLUME");
+            System.out.println("menu pilihan : \n"
+                    + "1 : bangun ruang \n"
+                    + "2 : bangun datar");
+            System.out.println("masukkan pilihan anda");
+            pil = input.nextLine();
+                switch (pil){
+                    case "1":
+                        System.out.println("menu bangun ruang \n"
+                                + "A : rumus kubus \n"
+                                + "B : rumus balok \n"
+                                + "masukkan pilihan anda !");
+                        pil = input.nextLine();
+                        switch (pil) {
+                            case "A":
+                                namabangun = "kubus";
+                                System.out.println("`rumus "+namabangun);
+                                System.out.println("masukkan panjang sisi");
+                                sisi = input.nextDouble();
+                                hasil = sisi * sisi * sisi;
+                        break;
+                    case "B":
+                        namabangun = "balok";
+                        System.out.println("rumus balok "+namabangun);
+                        System.out.println("masukkan panjang");
+                        panjang = input.nextDouble();
+                        System.out.println("masukkan lebar");
+                        lebar = input.nextDouble();
+                        System.out.println("masukkan tinggi");
+                        tinggi = input.nextDouble();
+                        hasil=panjang*lebar*tinggi;
+                }
+                break;
+                    case "2":
+                        System.out.println("menu bangun datar \n"
+                                + "A : rumus persegi \n"
+                                + "B : rumus persegi panjang \n"
+                                + "masukkan pilihan anda !");
+                        pil = input.nextLine();
+                        switch (pil) {
+                            case "A":
+                                namabangun = "persegi";
+                                System.out.println("`rumus "+namabangun);
+                                System.out.println("masukkan panjang sisi");
+                                sisi = input.nextDouble();
+                                hasil = sisi * sisi;
+                        break;
+                    case "B":
+                        namabangun = "persegi panjang";
+                        System.out.println("rumus balok "+namabangun);
+                        System.out.println("masukkan panjang");
+                        panjang = input.nextDouble();
+                        System.out.println("masukkan lebar");
+                        lebar = input.nextDouble();
+                        hasil= panjang * lebar;
+                        break;
+                }
+                        break;
+                    default:
+                        System.out.println("menu tidask tersedia");
+                }
+                System.out.println("NAMA BANGUN :" + namabangun + "\n"
+                        + "rumus    :" + rumus + " \n"
+                        + "luas/volume :" + hasil );
